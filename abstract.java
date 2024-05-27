@@ -1,12 +1,10 @@
 package com.coreconcepts.abstractclass;
-
-public abstract class Person {
+public class Veg extends Person{
 	
-	public void speak() {
-		System.out.println("Share his/her thougths");
+	@Override
+	public void eat() {
+		System.out.println("Eats veg");
 	}
-	
-	public abstract void eat();
 
 }
 public class Nonveg extends Person {
@@ -37,5 +35,5 @@ public class MainAbstract {
 		mia.speak();
 		mia.eat();
 	}
-
 }
+
