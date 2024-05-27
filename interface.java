@@ -1,4 +1,10 @@
 package com.coreconcepts.interfacee;
+public interface Phone {
+	String processor(); //abstract method 
+	String OS(); // abstract method
+	int spaceInGB(); //abstract method
+}
+
 public class Iphone8 implements Phone{
 @Override
 	public String processor() {
@@ -45,8 +51,4 @@ public class OnePlus5 implements Phone{
 		System.out.println("spaceinGB: "+ ios.spaceInGB());
 	}
 }
-public interface Phone {
-	String processor(); //abstract method 
-	String OS(); // abstract method
-	int spaceInGB(); //abstract method
-}
+
