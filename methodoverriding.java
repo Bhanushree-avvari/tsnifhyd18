@@ -1,27 +1,16 @@
 package com.methodoverriding;
 
-public class InstanceoveridingTest {
+public class Parent {
 	
-	public static void main(String[] args) {
-		//Parent p1 = new Parent();
-		//p1.show();
-		
-		Parent p2 = new Child();
-		p2.show();
-		
+	//Instance method
+	public void show() {
+		System.out.println("Parents show() is called");
 	}
 	
-
-}
-public class StaticoverridingTest {
-	
-	public static void main(String[] args) {
-		
-		Parent obj2 = new Child();
-		obj2.print();
-		
+	//Static method
+	public static void print() {
+		System.out.println("Parent static print() is called");
 	}
-
 }
 public class Child extends Parent{
 	
@@ -35,15 +24,17 @@ public class Child extends Parent{
 	}
 
 }
-public class Parent {
+public class overidingTest {
 	
-	//Instance method
-	public void show() {
-		System.out.println("Parents show() is called");
+	public static void main(String[] args) {
+		//Parent p1 = new Parent();
+		//p1.show();
+		
+		Parent p2 = new Child();
+		p2.show();//Instance overriding
+		p2.print();//static overriding
+		
 	}
 	
-	//Static method
-	public static void print() {
-		System.out.println("Parent static print() is called");
-	}
+
 }
