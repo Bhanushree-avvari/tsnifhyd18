@@ -7,9 +7,6 @@ public class ProtectedA {
 	}
 
 }
-
-import com.coreconcepts.accessmodifiers.*;
-
 public class Protected2Main extends ProtectedA {
 	
 	public static void main(String[] args) {
