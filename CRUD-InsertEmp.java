@@ -19,21 +19,21 @@ public class Insertemp {
 		    String sql3="INSERT INTO emptable(emp_id, emp_name,emp_sal)VALUES(?,?,?)";
 
 		    PreparedStatement statement = conn.prepareStatement(sql);
-		    statement.setString(1, "bhanu 567");
+		    statement.setString(1, "567");
 		    statement.setString(2, "bhanushree");
 		    statement.setString(3, "80000");
 		    PreparedStatement statement = conn.prepareStatement(sql);
-		    statement.setString(1, "rani 123");
+		    statement.setString(1, "123");
 		    statement.setString(2, "rani kumari");
 		    statement.setString(3, "50000");
 		    
 		    PreparedStatement statement = conn.prepareStatement(sql);
-		    statement.setString(1, "pavani 786");
+		    statement.setString(1, "786");
 		    statement.setString(2, "pavani sri");
 		    statement.setString(3, "70000");
 		    
 		    PreparedStatement statement = conn.prepareStatement(sql);
-		    statement.setString(1, "pallavi 345");
+		    statement.setString(1, "345");
 		    statement.setString(2, "pallavi");
 		    statement.setString(3, "40000");
 
